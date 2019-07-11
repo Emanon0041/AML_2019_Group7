@@ -13,7 +13,7 @@ However, the algorithm stops at local minimum or saddle point, which may not be 
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_01_pv.png">
-</p>
+</p>size
 
 ## Momentum
 
@@ -24,11 +24,11 @@ However, the algorithm stops at local minimum or saddle point, which may not be 
 ## Experiments with Gradient Descent
 I might include some tables here and references to my code.
 
-| Method              | Convergence ?  |Step size   |
-|---------------------|----------------|------------|
-|Plain vanilla        | Yes            |426         |
-|Momentum             | Yes            |1460        |
-|NAG                  | Yes            |607         |
+| Method              | Convergence ?  |No. of steps  |
+|---------------------|----------------|--------------|
+|Plain vanilla        | Yes            |426           |
+|Momentum             | Yes            |1460          |
+|NAG                  | Yes            |607           |
 
 ---
 
