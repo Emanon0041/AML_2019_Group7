@@ -52,11 +52,11 @@ Momentum takes previous step into account.
 
 Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/Group7_Part1_GD.ipynb</a>
 
-| Method              | Convergence ?  |No. of steps  | Loss function (6 dp)|
-|---------------------|----------------|--------------|--------------|
-|Plain vanilla        | Yes            |426           |-0.215463|
-|Momentum             | Yes            |1460          |-1.031628|
-|NAG                  | Yes            |607           |-1.031627|
+| Method              | Convergence ?  |No. of steps  | Loss function (6 dp)|Description|
+|---------------------|----------------|--------------|--------------|------------------|
+|Plain vanilla        | Yes            |426           |-0.215463| stops at a local minimum|
+|Momentum             | Yes            |1460          |-1.031628| takes a large number of steps to converge
+|NAG                  | Yes            |607           |-1.031627| performs the best|
 
 ---
 
