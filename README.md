@@ -7,7 +7,7 @@ Loss function is a measure of the accuracy of our models, through quantifying th
 
 ## Plain vanilla
 
-The algorithm works in a similar way to the following analogy. Imagining a person half-way to the top of a mountain, trying to get to the bottom of the valley. This can be acheived by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and repeat the process. Iteratively, this process will allow the person to get to a point where he can no longer find any downward sloping directions to continue walking -- at the valley bottom !
+The algorithm works in a similar way to the following analogy. Imagining a person half-way to the top of a mountain, trying to get to the bottom of the valley. This can be acheived by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and repeat the process. Iteratively, this process will allow the person to get to a point where he can no longer find any downward sloping directions to continue walking at the valley bottom.
 
 ### Step sizes (learning rate)
 
