@@ -13,6 +13,8 @@ The algorithm work in a similar way as the following analogy. Imagine walking ha
 
 ### Step sizes (learning rate)
 
+The table below summarises the number of steps to convergence using different step size.  
+
 | Step size       | Number of step| 
 |----------------|-------------|
 |0.0005           | 2726        |
@@ -22,13 +24,17 @@ The algorithm work in a similar way as the following analogy. Imagine walking ha
 |0.008            | 170         |
 |0.016            | 20           |
 |0.128           | did not converge in 10000 steps       |
-|0.256            | did not converge in 10000 steps       |
+|0.256            | did not converge in 10000 steps      |
 
-Step size doubled, number of step decreases by half????
-
-However, the path did not converge (within 10000 steps) if eta was 0.128 or above. The above experiment shows the gradient path
+As we double the step size, the number of iterations would be roughly halved. However, the path did not converge (within 10000 steps) if eta was 0.128 or above. The above experiment shows the gradient path
  -	takes a long time to convergence if step size is too small
  -	does not converge at all if the step size is too big
+ 
+ The graphs belows show the relationship between the step sizes and and the number of steps taken.
+ 
+ <p align="center">
+  <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/step_size.png">
+</p>
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_01_pv.png">
