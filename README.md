@@ -7,7 +7,7 @@ Loss function is a measure of the accuracy of our models, through quantifying th
 
 ## Plain vanilla
 
-The algorithm works in a similar way to the following analogy. Imagining a person half-way to the top of a mountain, trying to get to the bottom of the valley. This can be acheived by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and repeat the process. Iteratively, this process will allow the person to get to a point where he can no longer find any downward sloping directions to continue walking at the valley bottom.
+The algorithm works in a similar way to the following analogy. Imagining a person half-way to the top of a mountain, trying to get to the bottom of the valley. This can be achieved by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and repeat the process. Iteratively, this process will allow the person to get to a point where he can no longer find any downward sloping directions to continue walking at the valley bottom.
 
 ### Step sizes (learning rate)
 
@@ -44,15 +44,15 @@ The algorithm took 426 steps to converge and the loss function was -0.21546. Fro
 
 ## Momentum
 
-Momentum improves upon the plain vanilla algorithm to take into account the previous step. The step size is positively correlated with that of the previous step. The step size will be non-zero even if the gradient is zero. This deals with the problem of saddle points so that the algorithm will no longer stop when reaching such a point. From the graph below, it can be seen that the global minimum is acheived using the same parameters as the plain vanilla algorithm. 
+Momentum improves upon the plain vanilla algorithm to consider the previous step. The step size is positively correlated with that of the previous step. The step size will be non-zero even if the gradient is zero. This deals with the problem of saddle points so that the algorithm will no longer stop when reaching such a point. From the graph below, it can be seen that the global minimum is achieved using the same parameters as the plain vanilla algorithm.
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_02_mm.png">
 </p>
 
-## Nesterov's Accelarated Gradient (NAG)
+## Nesterov's Accelerated Gradient (NAG)
 
-NAG is another improvement over the plain vanilla algorithm. Instead of looking at the current slope, the algorithm looks ahead instead for the gradient of the slope in the front. It reduces the step size when the slope ahead is getting flatter or in reversing direction. Using the same parameters, this algorithm took significantly fewer steps than Momentum to acheive convergence. The graphs below shows the function and gradient path for this algorithm.
+NAG is another improvement over the plain vanilla algorithm. Instead of looking at the current slope, the algorithm looks ahead instead for the gradient of the slope in the front. It reduces the step size when the slope ahead is getting flatter or in reversing direction. Using the same parameters, this algorithm took significantly fewer steps than Momentum to achieve convergence. The graphs below show the function and gradient path for this algorithm.
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_03_nag.png">
@@ -62,7 +62,7 @@ NAG is another improvement over the plain vanilla algorithm. Instead of looking 
 
 ## Experiments with Gradient Descent
 
-Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/Group7_Part1_GD.ipynb</a>
+Relevant pyhton code can be found in the link <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/Group7_Part1_GD.ipynb</a>
 
 | Method               |No. of steps to converge  | Loss function (6 dp)|Description|
 |---------------------|--------------|--------------|------------------|
@@ -70,7 +70,7 @@ Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041
 |Momentum             |1460          |-1.031628| takes a large number of steps to converge
 |NAG                  |607           |-1.031627| performs the best|
 
-The results are summarised in the table above. It can be seen that the NAG is the best algorithm, as it found the global minumum and did it in fewer steps than Momentum.
+The results are summarised in the table above. The NAG is the best algorithm, as it found the global minimum and did it in fewer steps than Momentum.
 
 ---
 
