@@ -13,7 +13,7 @@ The algorithm work in a similar way as the following analogy. Imagine walking ha
 
 ### Step sizes (learning rate)
 
-The table below summarises the number of steps to convergence using different step size.  
+The table below summarises the number of steps to convergence using different step size. Click <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/images/step_size.png</a> to see more graphical outputs of this experiments. 
 
 | Step size       | Number of step| 
 |----------------|-------------|
@@ -30,12 +30,7 @@ As we double the step size, the number of iterations would be roughly halved. Ho
  -	takes a long time to convergence if step size is too small
  -	does not converge at all if the step size is too big
  
- The graphs belows show the relationship between the step sizes and and the number of steps taken.
  
- <p align="center">
-  <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/step_size.png">
-</p>
-
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_01_pv.png">
 </p>
