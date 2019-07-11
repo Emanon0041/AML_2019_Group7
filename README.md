@@ -32,7 +32,11 @@ As we double the step size, the number of iterations would be roughly halved. Ho
  
 ### One example 
 
-The graph below shows the function surface and the gradient path using the parameters x_init = [2.0,-1.0], n_iter = 3000, eta = 0.001, tol = 1e-3. 
+The graph below shows the function surface and the gradient path using the parameters 
+- x_init = [2.0,-1.0]
+- n_iter = 3000 
+- eta = 0.001 
+- tol = 1e-3 
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_01_pv.png">
