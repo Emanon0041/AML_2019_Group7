@@ -24,7 +24,7 @@ The table below summarises, for different step sizes, the number of steps needed
 |0.128           | did not converge in 10000 steps       |
 |0.256            | did not converge in 10000 steps      |
 
-initially, as the step size doubles, the number of iterations would reduce by approximately 50%. However, for larger step sizes, e.g. 0.128 the path will not converge. The above experiment shows that the gradient path
+Initially, as the step size doubles, the number of iterations would reduce by approximately 50%. However, for larger step sizes, e.g. 0.128 the path will not converge. The above experiment shows that the gradient path
  -	takes more steps to convergence if the step size is too small;
  -	will not converge if the step size is too big.
  
@@ -44,13 +44,15 @@ The algorithm took 426 steps to converge and the loss function was -0.21546. Fro
 
 ## Momentum
 
-Momentum takes previous step into account. 
+Momentum improves upon the plain vanilla algorithm to take into account the previous step. Using the same analogy as above, the person will continue walking (at least for a bit) even after reaching a flat ground. This deals with the problem of saddle points so that the algorithm will no longer stop when reaching such a point. 
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_02_mm.png">
 </p>
 
 ## Nesterov's Accelarated Gradient (NAG)
+
+NAG is another improvement over the plain vanilla algorithm. Instead of looking at where the person is currently standing, the algorithm looks ahead instead for the gradient of the slope infront of the person.
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_03_nag.png">
