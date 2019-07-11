@@ -3,11 +3,11 @@
 ---
 ## Introduction
 
-Loss function is a measure of the accuracy of our models, through quantifying the difference of the actual values and the predictions. The gradient descent is an iterative machine learning algorithm used to select the parameters which minimises the loss function. The algorithm is important as it provides a computatively efficient way to solve the optimisation problem through parallelising computing, which is particularly advantageous for large multivariate functions. This report will introduce how the plain vanilla algorithm and two of itd modifications, using the Six-Hump Camel Function as an example. Please see <a href="url">http://www.sfu.ca/~ssurjano/camel3.html</a> for more detail. 
+Loss function is a measure of the accuracy of our models, through quantifying the difference of the actual values and the predictions. The gradient descent is an iterative machine learning algorithm used to select the parameters which minimises the loss function. The algorithm is important as it provides a computatively efficient way to solve the optimisation problem through parallelising computing, which is particularly advantageous for large multivariate functions. This report will introduce how the plain vanilla algorithm and two of its modifications, using the Six-Hump Camel Function as an example. Please read <a href="url">http://www.sfu.ca/~ssurjano/camel3.html</a> for more detail. 
 
 ## Plain vanilla
 
-The algorithm works in a similar way as the following analogy. Imagining a person half-way on a mountain, trying to get to the bottom of the valley. This can be acheived by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and then repeat the process. Iteratively, this process will allow the person to get to a valley where he can no longer find any downward sloping directions to continue walking.
+The algorithm works in a similar way to the following analogy. Imagining a person half-way to the top of a mountain, trying to get to the bottom of the valley. This can be acheived by carrying out the following steps. Firstly, from where the person is standing, measure the slope of the mountain in all directions. Secondly, choose the direction with the steepest downwards slope. Walk for a short distance (fixed step size) in this direction and repeat the process. Iteratively, this process will allow the person to get to a point where he can no longer find any downward sloping directions to continue walking -- at the valley bottom !
 
 ### Step sizes (learning rate)
 
@@ -24,9 +24,9 @@ The table below summarises, for different step sizes, the number of steps needed
 |0.128           | did not converge in 10000 steps       |
 |0.256            | did not converge in 10000 steps      |
 
-Initially, as the step size doubles, the number of iterations would reduce by approximately 50%. However, for larger step sizes, e.g. 0.128 the path will not converge. The above experiment shows that the gradient path
- -	takes more steps to convergence if the step size is too small;
- -	will not converge if the step size is too big.
+Initially, as the step size doubles, the number of iterations would be reduced by approximately 50%. However, for larger step sizes, e.g. 0.128 the path will not converge. The above experiment shows that the gradient path
+ -	takes more steps to convergence if the step size is too small
+ -	will not converge if the step size is too big
  
 ### One example 
 
