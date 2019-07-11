@@ -52,7 +52,7 @@ Momentum improves upon the plain vanilla algorithm to take into account the prev
 
 ## Nesterov's Accelarated Gradient (NAG)
 
-NAG is another improvement over the plain vanilla algorithm. Instead of looking at the current slope, the algorithm looks ahead instead for the gradient of the slope infront. It reduces the step size when the slop ahead is getting flatter or in the reverse direction. Using the same parameters, this algorithm took significantly fewer steps than Momentum to acheive convergence. The graphs below shows the function and gradient path for this algorithm.
+NAG is another improvement over the plain vanilla algorithm. Instead of looking at the current slope, the algorithm looks ahead instead for the gradient of the slope in the front. It reduces the step size when the slope ahead is getting flatter or in reversing direction. Using the same parameters, this algorithm took significantly fewer steps than Momentum to acheive convergence. The graphs below shows the function and gradient path for this algorithm.
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_03_nag.png">
@@ -70,7 +70,7 @@ Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041
 |Momentum             |1460          |-1.031628| takes a large number of steps to converge
 |NAG                  |607           |-1.031627| performs the best|
 
-The results are summarised in the table above. It can be seen that the NAG is the best algorithm, acheving the global minumum in fewer steps than Momentum.
+The results are summarised in the table above. It can be seen that the NAG is the best algorithm, as it found the global minumum and did it in fewer steps than Momentum.
 
 ---
 
