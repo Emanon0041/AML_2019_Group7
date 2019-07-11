@@ -70,5 +70,7 @@ Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041
 |Momentum             |1460          |-1.031628| takes a large number of steps to converge
 |NAG                  |607           |-1.031627| performs the best|
 
+The results are summarised in the table above. It can be seen that the NAG is the best algorithm, acheving the global minumum in fewer steps than Momentum.
+
 ---
 
