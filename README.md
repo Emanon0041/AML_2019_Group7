@@ -44,7 +44,15 @@ The algorithms took 426 steps to converge and the loss function was -0.21546. Fr
 
 Momentum takes previous step into account. 
 
+<p align="center">
+  <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_02_mm.png">
+</p>
+
 ## Nesterov's Accelarated Gradient (NAG)
+
+<p align="center">
+  <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_03_nag.png">
+</p>
 
 
 
@@ -52,11 +60,11 @@ Momentum takes previous step into account.
 
 Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/Group7_Part1_GD.ipynb</a>
 
-| Method              | Convergence ?  |No. of steps  | Loss function (6 dp)|Description|
-|---------------------|----------------|--------------|--------------|------------------|
-|Plain vanilla        | Yes            |426           |-0.215463| stops at a local minimum|
-|Momentum             | Yes            |1460          |-1.031628| takes a large number of steps to converge
-|NAG                  | Yes            |607           |-1.031627| performs the best|
+| Method               |No. of steps to converge  | Loss function (6 dp)|Description|
+|---------------------|--------------|--------------|------------------|
+|Plain vanilla        |426           |-0.215463| stops at a local minimum|
+|Momentum             |1460          |-1.031628| takes a large number of steps to converge
+|NAG                  |607           |-1.031627| performs the best|
 
 ---
 
