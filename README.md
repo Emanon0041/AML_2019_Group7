@@ -13,7 +13,7 @@ The algorithm work in a similar way as the following analogy. Imagine walking ha
 
 ### Step sizes (learning rate)
 
-The table below summarises the number of steps to convergence using different step size. Click <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/images/step_size.png</a> to see more graphical outputs of this experiments. 
+The table below summarises the number of steps to convergence using different step size. Click <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/images/step_size.png</a> to see more graphical outputs of these experiments. 
 
 | Step size       | Number of step| 
 |----------------|-------------|
@@ -38,25 +38,25 @@ The graph below shows the function surface and the gradient path using the param
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_01_pv.png">
 </p>
 
-The algorithms take 426 steps to converge and the loss function is -0.21546. From the gradient path, the algorithm stops at local minimum, which may not be the global minimum. To copy with this problem, we further experiment with two modifications of the plain vanilla algorithm. 
+The algorithms took 426 steps to converge and the loss function was -0.21546. From the gradient path, the algorithm stopped at local minimum, which may not be the global minimum. To copy with this problem, we further experiment with two modifications of the plain vanilla algorithm. 
 
 ## Momentum
 
+Momentum takes previous step into account. 
 
 ## Nesterov's Accelarated Gradient (NAG)
+
 
 
 ## Experiments with Gradient Descent
 
 Pyhton code can be found in the link <a href="url">https://github.com/Emanon0041/aml_2019_G7/blob/master/Group7_Part1_GD.ipynb</a>
 
-I might include some tables here and references to my code.
-
-| Method              | Convergence ?  |No. of steps  | loss function|
+| Method              | Convergence ?  |No. of steps  | Loss function (6 dp)|
 |---------------------|----------------|--------------|--------------|
-|Plain vanilla        | Yes            |426           |-0.21546379471670118|
-|Momentum             | Yes            |1460          |-1.0316283918420706|
-|NAG                  | Yes            |607           |-1.0316272989132922|
+|Plain vanilla        | Yes            |426           |-0.215463|
+|Momentum             | Yes            |1460          |-1.031628|
+|NAG                  | Yes            |607           |-1.031627|
 
 ---
 
