@@ -3,7 +3,7 @@
 ---
 ## Introduction
 
-Loss function is a measure of the accuracy of our models, through quantifying the difference of the actual values and the predictions. The gradient descent is an iterative machine learning algorithm used to select the parameters which minimises the loss function. The algorithm is important as it provides a computatively efficient way to solve the optimisation problem through parallelising computing, which is particularly advantageous for large multivariate functions. This report will introduce the plain vanilla algorithm and two of its modifications, using the Six-Hump Camel Function as an example. Please read <a href="url">http://www.sfu.ca/~ssurjano/camel3.html</a> for more detail. 
+Loss function is a measure of the accuracy of our models, through quantifying the difference of the actual values and the predictions. The gradient descent is an iterative machine learning algorithm used to select the parameters which minimises the loss function. The algorithm is important as it provides a computatively efficient way to solve the optimisation problem through parallelising computing, which is particularly advantageous for large multivariate functions. This report will introduce the plain vanilla algorithm and two of its modifications, using the Six-Hump Camel Function as an example. Please read <a href="url">http://www.sfu.ca/~ssurjano/camel6.html</a> for more detail. 
 
 ## Plain vanilla
 
