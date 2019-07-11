@@ -24,11 +24,11 @@ However, the algorithm stops at local minimum or saddle point, which may not be 
 ## Experiments with Gradient Descent
 I might include some tables here and references to my code.
 
-| Parameter      | Explanation |
-|----------------|-------------|
-|`A`             | x           |
-|`B`             | y           |
-|`C`             | z           |
+| Method              | Convergence ?  |Step size   |
+|---------------------|----------------|------------|
+|Plain vanilla        | Yes            |426         |
+|Momentum             | Yes            |1460        |
+|NAG                  | Yes            |607         |
 
 ---
 
