@@ -44,7 +44,7 @@ The algorithm took 426 steps to converge and the loss function was -0.21546. Fro
 
 ## Momentum
 
-Momentum improves upon the plain vanilla algorithm to take into account the previous step. Using the same analogy as above, the person will continue walking (at least for a bit) even after reaching a flat ground. This deals with the problem of saddle points so that the algorithm will no longer stop when reaching such a point. 
+Momentum improves upon the plain vanilla algorithm to take into account the previous step. The step size is positively correlated with that of the previous step. The step size will be non-zero even if the gradient is zero. This deals with the problem of saddle points so that the algorithm will no longer stop when reaching such a point. From the graph below, it can be seen that the global minimum is acheived using the same parameters as the plain vanilla algorithm. 
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_02_mm.png">
@@ -52,7 +52,7 @@ Momentum improves upon the plain vanilla algorithm to take into account the prev
 
 ## Nesterov's Accelarated Gradient (NAG)
 
-NAG is another improvement over the plain vanilla algorithm. Instead of looking at where the person is currently standing, the algorithm looks ahead instead for the gradient of the slope infront of the person.
+NAG is another improvement over the plain vanilla algorithm. Instead of looking at the current slope, the algorithm looks ahead instead for the gradient of the slope infront. It reduces the step size when the slop ahead is getting flatter or in the reverse direction. Using the same parameters, this algorithm took significantly fewer steps than Momentum to acheive convergence. The graphs below shows the function and gradient path for this algorithm.
 
 <p align="center">
   <img width="800" height="360" src="https://github.com/Emanon0041/aml_2019_G7/blob/master/images/gd_03_nag.png">
